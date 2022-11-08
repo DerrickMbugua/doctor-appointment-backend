@@ -41,14 +41,14 @@ class AddBotSessions extends Command
                         'channel' => 'WA',
                         'is_initial_step' => true,
                         'session_step' => 0,
-                        'step_title' => "Hello profilename👋🏽, welcome to Crown Paints. Choose an option below👇🏽to continue.\n\n",
+                        'step_title' => "Hello👋🏽, welcome to doctor's appointment. Choose an option below👇🏽to continue.\n",
                         'next_session_step' => 1,
-                        'service_methods' => [
-                            [
-                                'method_name' => 'getCounty',
-                                'method_type' => 'get_county',
-                            ]
-                        ],
+                        // 'service_methods' => [
+                        //     [
+                        //         'method_name' => 'getCounty',
+                        //         'method_type' => 'get_county',
+                        //     ]
+                        // ],
                         'back_to_session' => false,
                         'previous_session_name' => null,
                         'allow_back' => false,
@@ -58,7 +58,7 @@ class AddBotSessions extends Command
                             [
                                 'channel' => 'WA',
                                 'key_word' => 1,
-                                'response_text' => 'Buy paint online',
+                                'response_text' => 'Book Appointment',
                                 'show_step_id' => 1,
                                 'next_session_step' => 1,
                                 'previous_session_step' => null,
@@ -66,7 +66,7 @@ class AddBotSessions extends Command
                             [
                                 'channel' => 'WA',
                                 'key_word' => 2,
-                                'response_text' => 'Colour Chart',
+                                'response_text' => 'Appointment History',
                                 'show_step_id' => 1,
                                 'next_session_step' => 1,
                                 'previous_session_step' => null,
@@ -74,35 +74,12 @@ class AddBotSessions extends Command
                             [
                                 'channel' => 'WA',
                                 'key_word' => 3,
-                                'response_text' => 'Find a painter',
+                                'response_text' => 'Customer Care',
                                 'show_step_id' => 1,
                                 'next_session_step' => 1,
                                 'previous_session_step' => null,
                             ]
-                            // [
-                            //     'channel' => 'WA',
-                            //     'key_word' => 4,
-                            //     'response_text' => 'Team Kubwa',
-                            //     'show_step_id' => 1,
-                            //     'next_session_step' => 1,
-                            //     'previous_session_step' => null,
-                            // ],
-                            // [
-                            //     'channel' => 'WA',
-                            //     'key_word' => 5,
-                            //     'response_text' => 'Crown your space',
-                            //     'show_step_id' => 1,
-                            //     'next_session_step' => 1,
-                            //     'previous_session_step' => null,
-                            // ],
-                            // [
-                            //     'channel' => 'WA',
-                            //     'key_word' => 6,
-                            //     'response_text' => 'Crown colour app',
-                            //     'show_step_id' => 1,
-                            //     'next_session_step' => 1,
-                            //     'previous_session_step' => null,
-                            // ]
+
                         ]
                     ]
                 ]
@@ -117,8 +94,14 @@ class AddBotSessions extends Command
                         'channel' => 'WA',
                         'is_initial_step' => true,
                         'session_step' => 0,
-                        'step_title' => "Hello profilename👋🏽, welcome to Crown Paints. Choose an option below👇🏽to continue.\n\n",
+                        'step_title' => "Hello👋🏽, welcome to doctor's appointment. Choose an option below👇🏽to continue.\n",
                         'next_session_step' => 1,
+                        // 'service_methods' => [
+                        //     [
+                        //         'method_name' => 'getCounty',
+                        //         'method_type' => 'get_county',
+                        //     ]
+                        // ],
                         'back_to_session' => false,
                         'previous_session_name' => null,
                         'allow_back' => false,
@@ -128,7 +111,7 @@ class AddBotSessions extends Command
                             [
                                 'channel' => 'WA',
                                 'key_word' => 1,
-                                'response_text' => 'Buy paint online',
+                                'response_text' => 'Book Appointment',
                                 'show_step_id' => 1,
                                 'next_session_step' => 1,
                                 'previous_session_step' => null,
@@ -136,7 +119,7 @@ class AddBotSessions extends Command
                             [
                                 'channel' => 'WA',
                                 'key_word' => 2,
-                                'response_text' => 'Colour chart',
+                                'response_text' => 'Appointment History',
                                 'show_step_id' => 1,
                                 'next_session_step' => 1,
                                 'previous_session_step' => null,
@@ -144,41 +127,18 @@ class AddBotSessions extends Command
                             [
                                 'channel' => 'WA',
                                 'key_word' => 3,
-                                'response_text' => 'Find a painter',
-                                'show_step_id' => 1,
-                                'next_session_step' => 1,
-                                'previous_session_step' => null,
-                            ],
-                            [
-                                'channel' => 'WA',
-                                'key_word' => 4,
-                                'response_text' => 'Team kubwa',
-                                'show_step_id' => 1,
-                                'next_session_step' => 1,
-                                'previous_session_step' => null,
-                            ],
-                            [
-                                'channel' => 'WA',
-                                'key_word' => 5,
-                                'response_text' => 'Crown your space',
-                                'show_step_id' => 1,
-                                'next_session_step' => 1,
-                                'previous_session_step' => null,
-                            ],
-                            [
-                                'channel' => 'WA',
-                                'key_word' => 6,
-                                'response_text' => 'Crown colour app',
+                                'response_text' => 'Customer Care',
                                 'show_step_id' => 1,
                                 'next_session_step' => 1,
                                 'previous_session_step' => null,
                             ]
+
                         ]
                     ]
                 ]
             ],
             [
-                'session_name' => 'buy paint online',
+                'session_name' => 'book appointment',
                 'channel' => 'WA',
                 'session_switching' => 1,
                 'session_key_word' => 1,
@@ -187,7 +147,7 @@ class AddBotSessions extends Command
                         'channel' => 'WA',
                         'is_initial_step' => true,
                         'session_step' => 0,
-                        'step_title' => "Choose a category below👇🏽to view the paint products.\n\n",
+                        'step_title' => "Choose a date👇🏽 to book an appointment.\n\n",
                         'next_session_step' => 1,
                         'reply_type' => 'list',
                         'back_to_session' => false,
@@ -200,56 +160,56 @@ class AddBotSessions extends Command
                                 'channel' => 'WA',
                                 'key_word' => 1,
                                 'show_step_id' => 1,
-                                'response_text' => "Colour charts",
+                                'response_text' => "Monday",
                                 'next_session_step' => 1
                             ],
                             [
                                 'channel' => 'WA',
                                 'key_word' => 2,
                                 'show_step_id' => 1,
-                                'response_text' => "Decorative",
+                                'response_text' => "Tuesday",
                                 'next_session_step' => 1
                             ],
                             [
                                 'channel' => 'WA',
                                 'key_word' => 3,
                                 'show_step_id' => 1,
-                                'response_text' => "Adhesives",
+                                'response_text' => "Wednesday",
                                 'next_session_step' => 1
                             ],
                             [
                                 'channel' => 'WA',
                                 'key_word' => 4,
                                 'show_step_id' => 1,
-                                'response_text' => "Industrial",
+                                'response_text' => "Thursday",
                                 'next_session_step' => 1
                             ],
                             [
                                 'channel' => 'WA',
                                 'key_word' => 5,
                                 'show_step_id' => 1,
-                                'response_text' => "Intermediate",
+                                'response_text' => "Friday",
                                 'next_session_step' => 1
                             ],
                             [
                                 'channel' => 'WA',
                                 'key_word' => 6,
                                 'show_step_id' => 1,
-                                'response_text' => "Paint Accessories",
+                                'response_text' => "Saturday",
                                 'next_session_step' => 1
                             ],
                             [
                                 'channel' => 'WA',
                                 'key_word' => 7,
                                 'show_step_id' => 1,
-                                'response_text' => "Thinners",
+                                'response_text' => "Sunday",
                                 'next_session_step' => 1
                             ],
                             [
                                 'channel' => 'WA',
                                 'key_word' => 8,
-                                'show_step_id' => 1,
-                                'response_text' => "Personal protection",
+                                'show_step_id' => 0,
+                                'response_text' => "\n\nType *99* to go back home",
                                 'next_session_step' => 1
                             ]
                         ]
@@ -258,14 +218,14 @@ class AddBotSessions extends Command
                         'channel' => 'WA',
                         'is_initial_step' => false,
                         'session_step' => 1,
-                        'step_title' => "Choose a paint product below👇🏽to continue.\n\n",
+                        'step_title' => "Choose time👇🏽 to continue.\n\n",
                         'next_session_step' => 2,
-                        'service_methods' => [
-                            [
-                                'method_name' => 'getProduct',
-                                'method_type' => 'get_product',
-                            ]
-                        ],
+                        // 'service_methods' => [
+                        //     [
+                        //         'method_name' => 'getProduct',
+                        //         'method_type' => 'get_product',
+                        //     ]
+                        // ],
                         'reply_type' => 'list',
                         'back_to_session' => false,
                         'previous_session_name' => null,
@@ -277,37 +237,58 @@ class AddBotSessions extends Command
                                 'channel' => 'WA',
                                 'key_word' => 1,
                                 'show_step_id' => 1,
-                                'response_text' => "Crown BS",
+                                'response_text' => "10:00 AM",
                                 'next_session_step' => 2
                             ],
                             [
                                 'channel' => 'WA',
                                 'key_word' => 2,
                                 'show_step_id' => 1,
-                                'response_text' => "Crown Colour Guide",
+                                'response_text' => "11:00 AM",
                                 'next_session_step' => 2
                             ],
                             [
                                 'channel' => 'WA',
                                 'key_word' => 3,
                                 'show_step_id' => 1,
-                                'response_text' => "Crown Sensation",
+                                'response_text' => "12:00 PM",
+                                'next_session_step' => 2
+                            ],
+                            [
+                                'channel' => 'WA',
+                                'key_word' => 4,
+                                'show_step_id' => 1,
+                                'response_text' => "13:00 PM",
+                                'next_session_step' => 2
+                            ],
+                            [
+                                'channel' => 'WA',
+                                'key_word' => 5,
+                                'show_step_id' => 1,
+                                'response_text' => "14:00 PM",
+                                'next_session_step' => 2
+                            ],
+                            [
+                                'channel' => 'WA',
+                                'key_word' => 6,
+                                'show_step_id' => 1,
+                                'response_text' => "15:00 PM",
+                                'next_session_step' => 2
+                            ],
+                            [
+                                'channel' => 'WA',
+                                'key_word' => 7,
+                                'show_step_id' => 0,
+                                'response_text' => "\n\nType *0* to go back one step\nType *99* to go back home",
                                 'next_session_step' => 2
                             ]
-                            //   [
-                            //     'channel' => 'WA',
-                            //     'key_word' => 4,
-                            //     'show_step_id' => 0,
-                            //     'response_text' => "\n\nType *0* to go back one step\nType *99* to go back home",
-                            //     'next_session_step' => 2
-                            //   ]
                         ]
                     ],
                     [
                         'channel' => 'WA',
                         'is_initial_step' => false,
                         'session_step' => 2,
-                        'step_title' => "View item and add to cart",
+                        'step_title' => "The booking price is 500 KES.\n\n",
                         'next_session_step' => 3,
                         'service_methods' => [
                             [
@@ -319,14 +300,28 @@ class AddBotSessions extends Command
                         'previous_session_name' => null,
                         'allow_back' => true,
                         'previous_session_step' => 0,
-                        'with_input' => 0,
+                        'with_input' => 1,
                         'responses' => [
                             [
                                 'channel' => 'WA',
                                 'key_word' => 1,
-                                'show_step_id' => 0,
-                                'response_text' => "",
+                                'show_step_id' => 1,
+                                'response_text' => "Confirm",
                                 'next_session_step' => 3
+                            ],
+                            [
+                                'channel' => 'WA',
+                                'key_word' => 2,
+                                'show_step_id' => 1,
+                                'response_text' => "Cancel",
+                                'next_session_step' => 4
+                            ],
+                            [
+                                'channel' => 'WA',
+                                'key_word' => 3,
+                                'show_step_id' => 0,
+                                'response_text' => "\n\nType *0* to go back one step\nType *99* to go back home",
+                                'next_session_step' => 2
                             ]
 
                         ]
@@ -335,7 +330,29 @@ class AddBotSessions extends Command
                         'channel' => 'WA',
                         'is_initial_step' => false,
                         'session_step' => 3,
-                        'step_title' => "Check your phone!",
+                        'step_title' => "Thank you for booking an appointmnet with me.\n\nType *0* to go back one step\nType *99* to go back home",
+                        'next_session_step' => 0,
+                        'back_to_session' => false,
+                        'previous_session_name' => null,
+                        'allow_back' => true,
+                        'previous_session_step' => 0,
+                        'with_input' => 0,
+                        'responses' => [
+                            [
+                                'channel' => 'WA',
+                                'key_word' => 1,
+                                'show_step_id' => 0,
+                                'response_text' => "",
+                                'next_session_step' => 2
+                            ]
+
+                        ]
+                    ],
+                    [
+                        'channel' => 'WA',
+                        'is_initial_step' => false,
+                        'session_step' => 4,
+                        'step_title' => "The booking was not successful. Kindly confirm to book the appointment.\n\nType *0* to go back one step\nType *99* to go back home",
                         'next_session_step' => 4,
                         'back_to_session' => false,
                         'previous_session_name' => null,
@@ -356,7 +373,7 @@ class AddBotSessions extends Command
                 ]
             ],
             [
-                'session_name' => 'colour chart',
+                'session_name' => 'appointment history',
                 'channel' => 'WA',
                 'session_switching' => 1,
                 'session_key_word' => 2,
@@ -507,7 +524,7 @@ class AddBotSessions extends Command
                 ]
             ],
             [
-                'session_name' => 'find a painter',
+                'session_name' => 'customer care',
                 'channel' => 'WA',
                 'session_switching' => 1,
                 'session_key_word' => 3,
